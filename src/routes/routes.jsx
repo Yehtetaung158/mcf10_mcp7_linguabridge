@@ -11,9 +11,8 @@ const routes = createBrowserRouter([
     errorElement: <NotFoundPage />,
     children: [...PageRoutes],
   },
-  {
-    ...AuthRoutes,
-  },
+  ...AuthRoutes,
+  ,
   {
     path: "*",
     element: <NotFoundPage />,
