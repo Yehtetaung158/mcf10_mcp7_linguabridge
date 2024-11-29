@@ -3,15 +3,18 @@ import FirstSection from "./components/FirstSection";
 import SecondSecting from "./components/SecondSection";
 import ThirdSection from "./components/ThirdSection";
 import FourthSection from "./components/FourthSection";
+import Container from "../../../components/Container";
 
 const AboutPage = () => {
   return (
-    <div>
-      <FirstSection />
-      <SecondSecting />
-      <ThirdSection />
-      <FourthSection />
-    </div>
+    <>
+      <Container>
+        <FirstSection />
+        <SecondSecting />
+        <ThirdSection />
+        <FourthSection />
+      </Container>
+    </>
   );
 };
 

@@ -11,9 +11,9 @@ const Header = () => {
   return (
     <nav className="flex justify-between items-center text-neutral-900 px-2  h-[80px]">
       <Link to="/" className=" size-24 flex items-center justify-center ">
-        <Logo theme={"dark"}/>
+        <Logo theme={"dark"} />
       </Link>
-      <div className=" gap-4 items-center justify-center hidden md:flex">
+      <div className=" gap-4 items-center mx-auto justify-center hidden md:flex">
         <NavLink to="/">Home</NavLink>
         <NavLink to="/courses">Courses</NavLink>
         <NavLink to="/about">About</NavLink>
@@ -30,9 +30,7 @@ const Header = () => {
           <button className=" md:hidden" onClick={() => setOpen(!open)}>
             <img src={menuIcon} alt="menuIcon" />
           </button>
-          {open && (
-            <Driopdwon setOpen={setOpen}/>
-          )}
+          {open && <Driopdwon setOpen={setOpen} />}
         </div>
       </div>
     </nav>
