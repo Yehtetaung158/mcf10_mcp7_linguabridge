@@ -1,9 +1,10 @@
 import React from "react";
 import img1 from "../../../assets/Become an instructor/instructor_hero.png";
+import wave from "../../../assets/Become an instructor/wave.svg";
 
 const HeroSection = () => {
   return (
-    <div className="w-full h-[640px] py-[120px]">
+    <div className="w-full h-[640px] py-[120px] relative">
       <div className="w-[1207px]  flex justify-between items-center mx-auto">
         <div className="w-[695.03px] space-y-[40px]">
          
@@ -22,6 +23,7 @@ const HeroSection = () => {
             <img src={img1} className="" alt="" />
         </div>
       </div>
+      <img src={wave} className="absolute top-0 left-0" alt="" />
     </div>
   );
 };
