@@ -12,10 +12,10 @@ import { Link, NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className=" bg-neutral-700 mt-auto text-neutral-100 text-xs sm:text-ps_font_size lg:text-pm_font_size ">
-      <div className=" w-full">
-        <div className=" flex justify-center items-center px-4 py-6 sm:px-6">
-          <div className="grid grid-cols-1 gap-8 sm:gap-6 lg:grid-cols-3 w-full md:w-5/6 ">
+    <footer className=" bg-neutral-700 mt-auto text-neutral-100 text-xs sm:text-ps_font_size lg:text-pm_font_size w-full">
+      <div className="min-h-[503px] flex justify-center items-center">
+        <div className=" flex justify-center w-full max-w-[1208px] mx-auto">
+          <div className="grid grid-cols-1 gap-8 sm:gap-6 lg:grid-cols-3 w-full p-4 lg:p-0">
             <div>
               <ul className=" dark:text-gray-400">
                 <li className=" w-[100px]">
@@ -64,22 +64,34 @@ const Footer = () => {
             <div className="grid grid-cols-4 gap-8 sm:gap-6 col-span-2">
               <div className="col-span-2">
                 <h2 className="mb-6 text-sm font-semibold uppercase">
-                Get in Touch
+                  Get in Touch
                 </h2>
                 <ul className=" flex flex-col gap-6 ">
                   <li className=" flex gap-2">
-                    <img className=" w-[16px] sm:w-[21px] "  src={MapPin} alt="" />
+                    <img
+                      className=" w-[16px] sm:w-[21px] "
+                      src={MapPin}
+                      alt=""
+                    />
                     <span>1744(A), Shwe Myitter Street, Thaketa, Yangon</span>
                   </li>
                   <li className=" flex gap-2">
-                    <img className=" w-[16px] sm:w-[21px]" src={PhoneCallIcon} alt="" />
+                    <img
+                      className=" w-[16px] sm:w-[21px]"
+                      src={PhoneCallIcon}
+                      alt=""
+                    />
                     <span className=" flex flex-col">
                       <span>+959 785568747</span>
                       <span>+959 785568748</span>
                     </span>
                   </li>
                   <li className=" flex gap-2">
-                    <img className=" w-[16px] sm:w-[21px]" src={EnvelopeSimple} alt="envelopeicon" />
+                    <img
+                      className=" w-[16px] sm:w-[21px]"
+                      src={EnvelopeSimple}
+                      alt="envelopeicon"
+                    />
                     <span className=" flex flex-col">
                       <span>linguabridge@gmail.com</span>
                       <span>linguabridge645@gmail.com</span>
@@ -88,9 +100,7 @@ const Footer = () => {
                 </ul>
               </div>
               <div className="col-span-1">
-                <h2 className="mb-6 text-sm font-semibold uppercase">
-                  Pages
-                </h2>
+                <h2 className="mb-6 text-sm font-semibold uppercase">Pages</h2>
                 <ul className="flex flex-col">
                   <NavLink to="/" className="mb-4">
                     Home
@@ -108,9 +118,7 @@ const Footer = () => {
                 </ul>
               </div>
               <div className=" col-span-1">
-                <h2 className="mb-6 text-sm font-semibold uppercase ">
-                  Legal
-                </h2>
+                <h2 className="mb-6 text-sm font-semibold uppercase ">Legal</h2>
                 <ul className="flex flex-col">
                   <NavLink to="/privacy-policy" className="mb-4">
                     Privacy Policy
@@ -123,17 +131,17 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="flex items-center justify-between bg-neutral-900 w-full h-[115px] text-ps_font_size sm:text-pm_font_size px-4">
-          <span className="text-sm text-neutral-500 sm:text-center">
-            © 2024{" "}
-            <a href="https://flowbite.com" className="hover:underline">
-            - MCP7/MCF10
-            </a>
-            . All Rights Reserved.
-          </span>
-          <div className="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
-            <p>MMSIT Connection</p>
-          </div>
+      </div>
+      <div className="flex items-center justify-between bg-neutral-900 w-full h-[115px] text-ps_font_size sm:text-pm_font_size px-4">
+        <span className="text-sm text-neutral-100 sm:text-center">
+          © 2024{" "}
+          <a href="https://flowbite.com" className="hover:underline">
+            | MCP7/MCF10
+          </a>
+          . All Rights Reserved.
+        </span>
+        <div className="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
+          <p>MMSIT Connection</p>
         </div>
       </div>
     </footer>
@@ -141,3 +149,5 @@ const Footer = () => {
 };
 
 export default Footer;
+
+// className=" w-full "
