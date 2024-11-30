@@ -11,7 +11,8 @@ export default {
       },
       colors: {
         "primary-color": "#17A2B8", // Orange color
-        "secondary-color": "#F3FDFF", // Yellow color
+        "primary-hover-color": "#24737f",
+        "secondary-color": "#F3FDFF", 
         "light-yellow": "#FEF6E0",
         "dark-yellow": "#F7C32E",
         "light-green": "#DAFFEB",
