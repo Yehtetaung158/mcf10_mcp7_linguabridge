@@ -5,23 +5,23 @@ import Green from "../../../../assets/About-Us/Green.png";
 
 const ThirdSection = () => {
   return (
-    <section className="w-full flex">
-      <div className="grid grid-cols-12">
+    <section className="w-[1100px] mx-auto flex">
+      <div className="grid grid-cols-12 mt-20">
         <div className="col-span-6">
           <img src={Third} className="" alt="" />
         </div>
-        <div className="col-span-6 ml-4">
-          <img src={Mission} className="w-20" alt="" />
-          <div className="text-3xl font-miniHeader_weight font-header_font_style">
+        <div className="col-span-6 ml-8">
+          <img src={Mission} className="w-1/4  mt-5 mb-5" alt="" />
+          <div className="text-4xl mb-4 font-miniHeader_weight font-header_font_style">
             {" "}
             Why should choose our{" "}
           </div>
-          <div className="text-3xl font-miniHeader_weight font-header_font_style">
+          <div className="text-4xl mb-5  font-miniHeader_weight font-header_font_style">
             {" "}
             platform?
           </div>
 
-          <div className="opacity-25 text-ps_font_size">
+          <div className="opacity-25 text-ps_font_size mb-5">
             {" "}
             We understand the unique needs of Myanmar learners. That’s why our
             lessons are designed to bridge the gap between your native language
