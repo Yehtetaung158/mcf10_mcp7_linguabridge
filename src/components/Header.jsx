@@ -19,7 +19,7 @@ const Header = () => {
         <NavLink to="/about">About</NavLink>
         <NavLink to="/contact">Contact</NavLink>
       </div>
-      <div className=" flex gap-4 items-center justify-center ">
+      <div className="flex gap-4 items-center justify-center">
         <NavLink to="/become-an-instructor" className=" hidden md:flex">
           Become an Instructor
         </NavLink>
@@ -31,6 +31,7 @@ const Header = () => {
             <img src={menuIcon} alt="menuIcon" />
           </button>
           {open && <Driopdwon setOpen={setOpen} />}
+          </div>
         </div>
       </div>
     </nav>
