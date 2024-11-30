@@ -9,12 +9,10 @@ import FifthSection from "./components/FifthSection";
 const AboutPage = () => {
   return (
     <>
-      <Container>
-        <FirstSection />
-        <SecondSecting />
-        <ThirdSection />
-        <FourthSection />
-      </Container>
+      <FirstSection />
+      <SecondSecting />
+      <ThirdSection />
+      <FourthSection />
     </>
   );
 };

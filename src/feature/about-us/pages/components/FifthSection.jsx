@@ -2,7 +2,7 @@ import React from "react";
 
 const FifthSection = () => {
   return (
-    <section className="flex w-[1100px] mx-auto ">
+    <section className=" ">
       <div className="grid grid-cols-5 bg-primary-color p-12  rounded-lg justify-center ml-20 absolute translate-y-1/4">
         <div className="col-span-3 ">
           <p className="text-4xl mb-4 text-white font-miniHeader_weight font-header_font_style">

@@ -5,7 +5,7 @@ import Green from "../../../../assets/About-Us/Green.png";
 
 const ThirdSection = () => {
   return (
-    <section className="w-[1100px] mx-auto flex">
+    <section className="flex">
       <div className="grid grid-cols-12 mt-20 mb-10">
         <div className="col-span-6">
           <img src={Third} className="" alt="" />
