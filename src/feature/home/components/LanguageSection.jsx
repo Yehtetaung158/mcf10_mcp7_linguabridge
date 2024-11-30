@@ -54,7 +54,7 @@ const LanguageSection = () => {
     <section className="mt-36 mb-10">
       <div className="text-center">
         <h1 className="text-3xl font-bold">Learner's Favourites</h1>
-        <p className="text-gray-500 mt-10">
+        <p className="text-neutral-500 mt-10">
           Choose from hundreds of courses from specialist organizstions
         </p>
       </div>
