@@ -12,7 +12,7 @@ const SecondSection = () => {
           {" "}
           Connected, Multilingual World
         </p>
-        <img src={Second} className="mt-10 mb-4 mt-6" alt="" />
+        <img src={Second} className="mt-10 mb-4 mt-6 " alt="" />
       </div>
     </section>
   );
