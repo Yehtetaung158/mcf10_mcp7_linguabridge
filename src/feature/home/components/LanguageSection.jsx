@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { GrLinkNext, GrLinkPrevious } from "react-icons/gr";
-
 import { coursesData } from "../data/course";
 import { learnerData } from "../data/learner";
 import AppDownloadSection from "./AppDownloadSection";
@@ -82,7 +81,7 @@ const LanguageSection = () => {
       <div className="flex gap-5 mt-10 items-center">
         <button
           onClick={handlePrevious}
-          className="bg-gray-200 border text-white size-14 rounded-full  "
+          className="bg-gray-200 border border-neutral-400 text-white size-14 rounded-full  "
         >
           <GrLinkPrevious size={20} className="mx-auto text-black" />
         </button>
@@ -95,7 +94,7 @@ const LanguageSection = () => {
         <button
           onClick={handleNext}
           className="bg-gray-200  
-             text-white size-14 rounded-full  "
+             text-white size-14 rounded-full border border-neutral-400"
         >
           <GrLinkNext size={20} className="mx-auto text-black" />
         </button>

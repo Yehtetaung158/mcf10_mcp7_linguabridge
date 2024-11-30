@@ -10,8 +10,8 @@ const RatingStar = ({ totalStars = 5, defaultRating = 4.5 }) => {
         stars.push(
           <FaStar
             key={i}
-            class="star"
-            style={{ cursor: "default", color: "#39aaaa" }}
+            className="star"
+            style={{ cursor: "default", color: "#17A2B8" }}
           />
         );
       } else if (i === Math.ceil(defaultRating) && defaultRating % 1 !== 0) {
@@ -19,8 +19,8 @@ const RatingStar = ({ totalStars = 5, defaultRating = 4.5 }) => {
         stars.push(
           <FaStarHalfAlt
             key={i}
-            class="star"
-            style={{ cursor: "default", color: "#39aaaa" }}
+            className="star"
+            style={{ cursor: "default", color: "#17A2B8" }}
           />
         );
       } else {
@@ -28,8 +28,8 @@ const RatingStar = ({ totalStars = 5, defaultRating = 4.5 }) => {
         stars.push(
           <FaRegStar
             key={i}
-            class="star"
-            style={{ cursor: "default", color: "#39aaaa" }}
+            className="star"
+            style={{ cursor: "default", color: "#17A2B8" }}
           />
         );
       }
