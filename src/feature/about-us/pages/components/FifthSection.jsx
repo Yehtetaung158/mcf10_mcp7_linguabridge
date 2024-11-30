@@ -1,41 +1,38 @@
 import React from "react";
-import { Input } from "@chakra-ui/react";
-import { Button } from "@chakra-ui/react";
 
 const FifthSection = () => {
   return (
-    <section className="w-[1100px] mx-auto flex">
-      <div className="grid grid-cols-5 bg-primary-color p-10 rounded-lg ">
-        <div className="col-span-3">
-          <p className="text-4xl text-white font-miniHeader_weight font-header_font_style">
-            Ready to Explore New Languages
+    <section className="flex w-[1100px] mx-auto ">
+      <div className="grid grid-cols-5 bg-primary-color p-12  rounded-lg justify-center ml-20 absolute translate-y-1/4">
+        <div className="col-span-3 ">
+          <p className="text-4xl mb-4 text-white font-miniHeader_weight font-header_font_style">
+            Ready to Explore New
           </p>
-          <p className="text-4xl text-white font-miniHeader_weight font-header_font_style">
-            and Cultures?
+          <p className="text-4xl mb-4 text-white font-miniHeader_weight font-header_font_style">
+            Languages and Cultures?
           </p>
           <p className="text-white text-ps_font_size">
             Join us for tips, lessons, and exclusive updates straight to your
             inbox!
           </p>
         </div>
-        <div className="col-span-2">
-          <form
-            onSubmit={(e) => e.preventDefault()}
-            className="w-full max-w-sm"
-          >
-            <div className="relative">
-              <Input
+        <div className="col-span-2 ">
+          {" "}
+          <form className="w-full max-w-md mt-10">
+            <div className="relative bg-white px-9 py-2 rounded-lg justify-center">
+              {" "}
+              <input
                 type="email"
                 placeholder="Your email address"
-                className="w-full pr-24 h-10 border-[#00B8D4] focus:ring-[#00B8D4] focus:border-[#00B8D4]"
+                className="w-full border-none rounded-sm border border-gray-300 px-3 py-2 pr-24 text-sm focus:border-gray-400 focus:outline-none"
                 required
               />
-              <Button
+              <button
                 type="submit"
-                className="absolute right-0 top-0 h-10 bg-[#00B8D4] hover:bg-[#00A4BD] text-white rounded-l-none"
+                className="absolute rounded-sm right-0 mr-4 py-2  translate-y-1/5 rounded-r-sm bg-black px-4 text-sm font-medium text-white transition-colors hover:bg-gray-600"
               >
                 Subscribe
-              </Button>
+              </button>
             </div>
           </form>
         </div>

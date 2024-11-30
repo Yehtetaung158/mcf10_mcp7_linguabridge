@@ -13,13 +13,15 @@ const Header = () => {
       <Link to="/" className=" size-24 flex items-center justify-center ">
         <Logo theme={"dark"} />
       </Link>
+
       <div className=" gap-4 items-center mx-auto justify-center hidden md:flex">
         <NavLink to="/">Home</NavLink>
         <NavLink to="/courses">Courses</NavLink>
         <NavLink to="/about">About</NavLink>
         <NavLink to="/contact">Contact</NavLink>
       </div>
-      <div className="flex gap-4 items-center justify-center">
+
+      <div className=" flex gap-4 items-center justify-center">
         <NavLink to="/become-an-instructor" className=" hidden md:flex">
           Become an Instructor
         </NavLink>
@@ -31,7 +33,6 @@ const Header = () => {
             <img src={menuIcon} alt="menuIcon" />
           </button>
           {open && <Driopdwon setOpen={setOpen} />}
-          </div>
         </div>
       </div>
     </nav>

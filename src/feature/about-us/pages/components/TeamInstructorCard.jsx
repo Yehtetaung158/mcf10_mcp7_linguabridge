@@ -1,6 +1,10 @@
 import React from "react";
+import Facebook from "../../../../assets/About-Us/Facebook.png";
+import Insta from "../../../../assets/About-Us/Insta.png";
+import Twitter from "../../../../assets/About-Us/Twitter.png";
+import Linkdin from "../../../../assets/About-Us/Linkdin.png";
 
-const TeamMemberCard = ({ image, name, role }) => {
+const TeamInstructorCard = ({ image, name, role }) => {
   return (
     <div>
       {" "}
@@ -19,28 +23,28 @@ const TeamMemberCard = ({ image, name, role }) => {
             href="#"
             className="w-8 h-8 flex items-center justify-center bg-gray-200 rounded-md hover:bg-gray-300"
           >
-            <i>hello</i>
+            <img src={Facebook} alt="facebook" />
           </a>
 
           <a
             href="#"
             className="w-8 h-8 flex items-center justify-center bg-gray-200 rounded-md hover:bg-gray-300"
           >
-            <i className="fab fa-instagram text-black"></i>
+            <img src={Insta} alt="Insta" />
           </a>
 
           <a
             href="#"
             className="w-8 h-8 flex items-center justify-center bg-gray-200 rounded-md hover:bg-gray-300"
           >
-            <i className="fab fa-twitter text-black"></i>
+            <img src={Twitter} alt="Twitter" />
           </a>
 
           <a
             href="#"
             className="w-8 h-8 flex items-center justify-center bg-gray-200 rounded-md hover:bg-gray-300"
           >
-            <i className="fab fa-linkedin-in text-black"></i>
+            <img src={Linkdin} alt="Linkdin" />
           </a>
         </div>
       </div>
@@ -48,4 +52,4 @@ const TeamMemberCard = ({ image, name, role }) => {
   );
 };
 
-export default TeamMemberCard;
+export default TeamInstructorCard;
