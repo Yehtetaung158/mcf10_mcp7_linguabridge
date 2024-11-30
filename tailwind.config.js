@@ -22,7 +22,7 @@ export default {
         "light-blue": "#E9EDFF",
         "dark-blue": "#445ED6",
         "dark-orange": "#FF6636",
-        
+
         // Additional Colors
         gray: {
           DEFAULT: "#6B7280",
@@ -54,14 +54,17 @@ export default {
         },
       },
       fontSize: {
-        "pl_font_size": "18px",
-        "pm_font_size": "16px",
-        "ps_font_size": "14px",
+        pl_font_size: "18px",
+        pm_font_size: "16px",
+        ps_font_size: "14px",
       },
-      fontWeight:{
-        "header_weight": "700",
-        "miniHeader_weight": "600",
-        "heighLight_weight": "500"
+      fontWeight: {
+        header_weight: "700",
+        miniHeader_weight: "600",
+        heighLight_weight: "500",
+      },
+      transitionProperty: {
+        "transform-opacity": "transform, opacity",
       },
     },
   },
