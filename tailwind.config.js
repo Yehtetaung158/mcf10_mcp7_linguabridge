@@ -54,9 +54,16 @@ export default {
         },
       },
       fontSize: {
+
+        "pl_font_size": "18px",
+        "pm_font_size": "16px",
+        "ps_font_size": "14px",
+        "sm_font_size": "12px",
+
         pl_font_size: "18px",
         pm_font_size: "16px",
         ps_font_size: "14px",
+
       },
       fontWeight: {
         header_weight: "700",
