@@ -6,7 +6,7 @@ import Review from "../../../../assets/About-Us/Review.png";
 
 const FirstSection = () => {
   return (
-    <section className="w-[1100px] mx-auto mt-10 flex">
+    <section className=" mt-10 flex">
       <img
         src={decorationImg}
         className="absolute  top-0 left-0 w-45 h-auto"

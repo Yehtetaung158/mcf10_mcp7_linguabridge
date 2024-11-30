@@ -4,7 +4,7 @@ import Second from "../../../../assets/About-Us/SecondImg.png";
 
 const SecondSection = () => {
   return (
-    <section className="w-[1100px] mx-auto flex">
+    <section className=" flex">
       <div className="flex flex-col items-center mt-20">
         {" "}
         <img src={Vision} className="size-[12%] mt-10 mb-4 mt-20" alt="" />
