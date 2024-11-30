@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 
+import { useEffect } from "react";
 import { courseTitleByUrl } from "../../../utils/course";
 import BeginnerDetail from "../components/coursesDetail/BeginnerDetail";
 import ElementaryDetail from "../components/coursesDetail/ElementaryDetail";
@@ -13,6 +14,10 @@ const CourseDetailPage = () => {
   const isBeginner = title.includes("Beginner");
   const isElementary = title.includes("Elementary");
   const isIntermediate = title.includes("Intermediate");
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <section className="pt-16 pb-10">
