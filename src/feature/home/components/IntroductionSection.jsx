@@ -12,16 +12,16 @@ import RatingStar from "./RatingStar";
 const IntroductionSection = () => {
   return (
     <div className="mx-auto">
-      <div className="grid md:grid-cols-1 md:h-[1100px] xl:h-[550px] w-full xl:p-0 xl:grid-cols-2 xl:gap-4 relative">
+      <div className="grid md:grid-cols-1 lg:h-[1100px] xl:h-[550px] w-full xl:p-0 xl:grid-cols-2 xl:gap-4 relative">
         <div className="col-span-1 md:h-1/2 xl:h-1/2 flex flex-col py-3">
           <div className="flex flex-col md:gap-10 md:h-full md:py-5 justify-between">
-            <p className="md:text-pm_font_size xl:mb-10">
+            <p className="md:text-pm_font_size sm:mb-5 md:mb-10">
               🤩 Unlock Your Potential Through Language Today!
             </p>
-            <h1 className="md:text-5xl font-header_font_style font-bold leading-tight tracking-wide [word-spacing:0.25em] xl:mb-10">
+            <h1 className="md:text-4xl lg:text-5xl font-header_font_style font-bold leading-tight tracking-wide [word-spacing:0.25em] sm:mb-5 md:mb-10">
               Explore the World <br /> Through Language
             </h1>
-            <p className="text-neutral-500 md:text-pl_font_size xl:mb-7">
+            <p className="text-neutral-500 md:text-pl_font_size sm:mb-5 md:mb-7">
               Learn foreign languages effortlessly with expert guidance in your
               native Myanmar language. Start your journey today!
             </p>
@@ -31,7 +31,7 @@ const IntroductionSection = () => {
           </div>
         </div>
 
-        <div className="col-span-1 relative h-full md:w-3/4 md:mx-auto lg:mx-auto flex xl:w-full xl:justify-end">
+        <div className="col-span-1 relative h-full md:w-3/4 sm:mt-5 md:mx-auto md:mt-5 lg:mx-auto flex xl:w-full xl:justify-end">
           <div className="w-[85%] md:h-full relative md:mx-auto lg:mx-auto">
             <img
               src={svg}
