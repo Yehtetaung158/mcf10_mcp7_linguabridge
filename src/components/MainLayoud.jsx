@@ -6,11 +6,13 @@ import Container from "./Container";
 
 const MainLayoud = () => {
   return (
-    <>
-      <Header />
-      <Outlet />
-      <Footer />
-    </>
+    <Container>
+      <div className="min-h-screen flex flex-col">
+        <Header />
+        <Outlet />
+        <Footer />
+      </div>
+    </Container>
   );
 };
 
