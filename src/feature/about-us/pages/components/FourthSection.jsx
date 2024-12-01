@@ -49,7 +49,6 @@ const FourthSection = () => {
               role={member.role}
             />
           ))}
-          <FifthSection />
         </div>
       </div>
     </section>

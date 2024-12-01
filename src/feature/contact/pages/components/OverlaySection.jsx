@@ -3,7 +3,7 @@ import React from "react";
 const OverlaySection = () => {
   return (
     <section className=" flex justify-center items-center mt-20 mb-20">
-      <div className="grid grid-cols-1 lg:grid-cols-5 bg-primary-color p-6 lg:p-12 absolute translate-y-1/3 w-full max-w-5xl rounded-lg items-center gap-6">
+      <div className="grid grid-cols-1 lg:grid-cols-5 bg-primary-color p-6 lg:p-12 absolute translate-y-2/3 w-full max-w-5xl rounded-lg items-center gap-6">
         <div className="lg:col-span-3 text-center lg:text-left">
           <p className="text-2xl md:text-3xl lg:text-4xl mb-4 text-white font-miniHeader_weight font-header_font_style">
             Ready to Explore New

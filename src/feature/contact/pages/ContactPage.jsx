@@ -12,7 +12,6 @@ const ContactPage = () => {
         <AddressSection />
         <MessageBox />
         <FaqSection />
-        <OverlaySection />
       </Container>
     </>
   );
