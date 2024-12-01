@@ -58,11 +58,11 @@ const AddressSection = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1   sm:grid-cols-2 lg:grid-cols-3  gap-6 px-4 md:px-10 mt-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 md:px-10 mt-10">
         {addresses.map((item, index) => (
           <div
             key={index}
-            className={`p-6 sm:p-8 rounded-lg shadow-md ${item.bgColor}`}
+            className={`p-6 sm:p-8 rounded-lg shadow-md ${item.bgColor} transform transition duration-300 hover:scale-105 hover:shadow-lg`}
           >
             <h3
               className={`text-lg sm:text-xl font-bold mb-2 ${item.textColor}`}
