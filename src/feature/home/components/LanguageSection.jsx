@@ -58,7 +58,7 @@ const LanguageSection = () => {
         </p>
       </div>
 
-      <div className="w-full bg-cyan-100 border h-[85px] mt-10 rounded-lg mx-auto flex justify-center items-center">
+      <div className="w-full bg-cyan-100 border md:h-[75px] lg:h-[85px] mt-10 rounded-lg mx-auto flex justify-center items-center">
         <ul className="flex gap-4">
           {Object.keys(coursesData).map((language) => (
             <li key={language}>
@@ -72,7 +72,7 @@ const LanguageSection = () => {
         </ul>
       </div>
 
-      <div className="mt-10 grid grid-cols-4 gap-3">
+      <div className="mt-10 grid md:grid-cols-3 xl:grid-cols-4 gap-3">
         {coursesData[selectedLanguage]?.map((course, index) => (
           <CourseCardSection course={course} key={index} />
         ))}
@@ -81,7 +81,7 @@ const LanguageSection = () => {
       <div className="flex gap-5 mt-10 items-center">
         <button
           onClick={handlePrevious}
-          className="bg-gray-200 border border-neutral-400 text-white size-14 rounded-full  "
+          className="bg-gray-200 border border-neutral-400 text-white md:size-12 lg:size-14 rounded-full  "
         >
           <GrLinkPrevious size={20} className="mx-auto text-black" />
         </button>
@@ -94,7 +94,7 @@ const LanguageSection = () => {
         <button
           onClick={handleNext}
           className="bg-gray-200  
-             text-white size-14 rounded-full border border-neutral-400"
+             text-white md:size-12 lg:size-14 rounded-full border border-neutral-400"
         >
           <GrLinkNext size={20} className="mx-auto text-black" />
         </button>
@@ -103,7 +103,7 @@ const LanguageSection = () => {
         {/* <h2 className="hidden xl:block xl:text-4xl font-bold">
           Your Language Learning Journey in Your Pocket!
         </h2> */}
-        <h2 className="hidden lg:block lg:text-3xl xl:text-4xl font-bold">
+        <h2 className="hidden xl:block lg:text-3xl xl:text-4xl font-bold">
           Your Language Learning Journey in Your Pocket!
         </h2>
         <AppDownloadSection />

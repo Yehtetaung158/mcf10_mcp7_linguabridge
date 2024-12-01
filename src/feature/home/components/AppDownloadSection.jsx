@@ -6,7 +6,7 @@ import vector from "../../../assets/Home/vector.png";
 
 const AppDownloadSection = () => {
   return (
-    <div className="border w-full h-[300px] bg-cyan-500 rounded-xl grid grid-cols-2 mb-16">
+    <div className="border w-full md:h-[350px] xl:h-[300px] bg-cyan-500 rounded-xl grid grid-cols-2 mb-16">
       <div className="flex flex-col m-10">
         <h1 className="md:text-lg lg:text-xl font-bold text-neutral-50 mb-7">
           Download Our App - Learn Any Time, Anywhere
@@ -28,7 +28,7 @@ const AppDownloadSection = () => {
       <img
         src={Iphone_Mockup}
         alt="Iphone Mockup"
-        className="h-[450px] absolute -top-9 right-10 tracking-wide"
+        className="h-[450px] absolute md:-top-14 md:right-9 xl:-top-9 xl:right-5 tracking-wide"
       />
     </div>
   );
