@@ -40,7 +40,7 @@ const FaqSection = () => {
   ];
 
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center px-4">
+    <section className="min-h-screen flex flex-col items-center justify-center px-5">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-6xl">
         <div className="flex flex-col justify-start md:justify-center">
           <h1 className="text-2xl md:text-4xl font-bold text-header mb-6 text-center md:text-left">
