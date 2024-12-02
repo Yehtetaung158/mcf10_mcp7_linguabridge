@@ -45,7 +45,7 @@ const IntroductionSection = () => {
             />
           </div>
 
-          <div className="absolute border border-cyan-600 z-30 w-[300px] h-[100px] bg-white p-2 rounded-xl shadow-md px-10 py-4 md:translate-x-10 md:translate-y-9 xl:translate-x-10 xl:translate-y-9 bottom-0 right-0">
+          <div className="absolute border border-cyan-600 z-30 w-[300px] h-[100px] bg-white p-2 rounded-xl shadow-md px-10 py-4 sm:translate-y-9 md:translate-x-10 md:translate-y-9 xl:translate-x-10 xl:translate-y-9 bottom-0 right-0">
             <div className="flex justify-between">
               <p className="font-bold text-xl mb-1">4.8</p>
               <RatingStar totalStars={5} initialRating={4.5} />
@@ -57,7 +57,7 @@ const IntroductionSection = () => {
         </div>
       </div>
 
-      <div className="col-span-2 text-center w-full mt-28">
+      <div className="col-span-2 text-center w-full sm:mt-32 lg:mt-44 xl:mt-28">
         <div className="grid sm:grid-cols-1 md:grid-cols-2 md:p-5 lg:p-0 xl:grid-cols-4 gap-5 w-full">
           <InformationSection imgUrl={online} color="bg-light-yellow" />
           <InformationSection imgUrl={tutor} color="bg-light-green" />
