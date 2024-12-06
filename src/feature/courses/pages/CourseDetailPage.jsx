@@ -1,5 +1,6 @@
 import { NavLink, Outlet, useParams } from "react-router-dom";
 
+import { useEffect } from "react";
 import { useMediaQuery } from "react-responsive";
 import {
   MyanmarFlag,
@@ -21,6 +22,10 @@ const CourseDetailPage = () => {
   const { slug } = useParams();
   const isTablet = useMediaQuery({ minWidth: 768 });
   const isDesktop = useMediaQuery({ minWidth: 1024 });
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <section className=" pb-10 ">
