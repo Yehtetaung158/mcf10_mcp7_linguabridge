@@ -60,10 +60,10 @@ const CourseDetailPage = () => {
         </div>
 
         {/* Middle Section */}
-        <div className="flex flex-col lg:flex-row px-4 -mt-10 gap-12 lg:gap-6">
+        <div className="flex flex-col lg:flex-row -mt-10 gap-12 lg:gap-6">
           {/* Left Section */}
-          <div className="bg-white lg:w-4/6">
-            <div className="border shadow-lg rounded-md">
+          <div className=" lg:w-4/6 px-4">
+            <div className="border shadow-lg rounded-md bg-white">
               <div className=" flex flex-wrap justify-around items-center py-8 md:py-6 px-8 gap-6 border-b-neutral-200 border-b-2 ">
                 {tabData(slug).map((link) => (
                   <NavLink
