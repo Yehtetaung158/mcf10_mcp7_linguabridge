@@ -23,7 +23,7 @@ const CourseCard = ({
       <img
         src={courseImg}
         alt="course image"
-        className="rounded-t-md h-[300px]  sm:h-[238px] object-cover w-full"
+        className="rounded-t-md h-[200px] lg:h-[238px] object-cover max-lg:object-contain size-full"
       />
       <div className="p-5 space-y-2.5">
         <h3 className="font-miniHeader_weight text-xl group-hover:text-primary-color">
@@ -35,15 +35,15 @@ const CourseCard = ({
             {level}
           </div>
         </div>
-        <div className="flex gap-2">
+        <div className="flex gap-2 items-center">
           <span>{ratingCount}</span>
-          <img src={ratingStarImg} alt="start image" />
+          <img src={ratingStarImg} alt="start image" className="h-5" />
         </div>
         <div className="font-header_weight group-hover:text-primary-color">
           {price} Ks
         </div>
         <hr className="border-t-neutral-200" />
-        <div className="flex justify-between items-center text-xs text-gray">
+        <div className="flex justify-between text-xs text-gray">
           <div className="flex items-center gap-1">
             <img src={clockIcon} alt="clock icon" />
             <span>

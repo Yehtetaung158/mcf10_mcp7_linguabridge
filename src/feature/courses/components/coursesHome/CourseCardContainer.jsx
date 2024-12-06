@@ -13,7 +13,7 @@ import CourseCard from "../coursesHome/CourseCard";
 
 const CourseCardContainer = () => {
   return (
-    <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 mt-10 lg:mt-1">
+    <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-10 lg:mt-1">
       <CourseCard
         courseImg={oliviaBeginnerImg}
         title={"Master the Basics: Korean for Beginners"}
