@@ -1,3 +1,11 @@
+import {
+  ArticleIcon,
+  CertificateIcon,
+  ClockIcon,
+  VideoCameraIcon,
+  VideoIcon,
+} from "../assets/Courses/detailImages/courseDetailImages";
+
 export const courseTitleByUrl = {
   // For "master-basics"
   "master-the-basics-korean-for-beginner":
@@ -36,4 +44,31 @@ export const chartData = [
   { number: 60 },
   { number: 40 },
   { number: 20 },
+];
+
+export const tabData = (slug) => {
+  return [
+    { label: "Overview", path: `/courses/${slug}` },
+    {
+      label: "Contents",
+      path: `/courses/${slug}/contents`,
+    },
+    {
+      label: "Instructor",
+      path: `/courses/${slug}/instructor`,
+    },
+    {
+      label: "Reviews",
+      path: `/courses/${slug}/reviews`,
+    },
+    { label: "FAQ", path: `/courses/${slug}/faq` },
+  ];
+};
+
+export const includedData = [
+  { icon: VideoIcon, text: "12 hours video" },
+  { icon: CertificateIcon, text: "Certificate" },
+  { icon: ArticleIcon, text: "12 Article" },
+  { icon: VideoCameraIcon, text: "Watch Offline" },
+  { icon: ClockIcon, text: "Lifetime Access" },
 ];
