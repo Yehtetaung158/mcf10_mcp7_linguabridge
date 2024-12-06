@@ -9,27 +9,30 @@ const RatingStar = ({ totalStars = 5, defaultRating = 4.5 }) => {
         // Render full star
         stars.push(
           <FaStar
+            size={20}
             key={i}
-            class="star"
-            style={{ cursor: "default", color: "#39aaaa" }}
+            className="star"
+            style={{ cursor: "default", color: "#17A2B8" }}
           />
         );
       } else if (i === Math.ceil(defaultRating) && defaultRating % 1 !== 0) {
         // Render half star
         stars.push(
           <FaStarHalfAlt
+            size={20}
             key={i}
-            class="star"
-            style={{ cursor: "default", color: "#39aaaa" }}
+            className="star"
+            style={{ cursor: "default", color: "#17A2B8" }}
           />
         );
       } else {
         // Render empty star
         stars.push(
           <FaRegStar
+            size={20}
             key={i}
-            class="star"
-            style={{ cursor: "default", color: "#39aaaa" }}
+            className="star"
+            style={{ cursor: "default", color: "#17A2B8" }}
           />
         );
       }

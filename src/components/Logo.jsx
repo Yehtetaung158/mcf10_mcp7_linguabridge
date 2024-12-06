@@ -1,14 +1,16 @@
 import React from "react";
 
-const Logo = ({ theme }) => {
+const Logo = ({ theme, className = "" }) => {
+  const logoSrc =
+    theme === "dark" ? "src/assets/logo.png" : "src/assets/logo_light.png";
+  const additionalClass = theme === "dark" ? "max-w-[93px]" : "";
+
   return (
-    <>
-      {theme === "dark" ? (
-        <img src="../src/assets/logo.png" alt="logo" />
-      ) : (
-        <img src="src/assets/logo_light.png" alt="logo" />
-      )}
-    </>
+    <img
+      className={`${additionalClass} ${className}`}
+      src={logoSrc}
+      alt="logo"
+    />
   );
 };
 

@@ -18,7 +18,7 @@ const Header = () => {
         !dropdownRef.current.contains(event.target) &&
         !buttonRef.current.contains(event.target)
       ) {
-        setOpen(false); 
+        setOpen(false);
       }
     };
 
