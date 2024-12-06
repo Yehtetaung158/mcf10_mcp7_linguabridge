@@ -83,7 +83,7 @@ const CourseDetailPage = () => {
                 ))}
               </div>
 
-              <div className="px-5 py-10">
+              <div className="py-10">
                 <Outlet />
               </div>
             </div>
