@@ -1,6 +1,6 @@
 import { NavLink, Outlet, useParams } from "react-router-dom";
 
-
+import { useEffect } from "react";
 import { useMediaQuery } from "react-responsive";
 import {
   MyanmarFlag,
@@ -17,8 +17,6 @@ import {
 import { tabData } from "../../../utils/course";
 import IncludedCard from "../components/coursesDetail/IncludedCard";
 import CourseCard from "../components/coursesHome/CourseCard";
-
-
 
 const CourseDetailPage = () => {
   const { slug } = useParams();
