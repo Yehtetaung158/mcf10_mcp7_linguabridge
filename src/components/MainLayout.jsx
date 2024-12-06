@@ -8,6 +8,8 @@ const MainLayout = () => {
   const location = useLocation();
   const pathName = location.pathname.startsWith("/courses/");
   const isCoursesPage = location.pathname.includes("/courses");
+  const isPrivacyPolicyPage = location.pathname === "/privacy-policy";
+  const isTermAndConditionsPage = location.pathname === "/terms-and-conditions";
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -16,7 +18,19 @@ const MainLayout = () => {
       </div>
 
       {/* Hero Image */}
-      {!pathName && isCoursesPage && (
+      {!pathName && isCoursesPage   && (
+        <div className="max-w-[1440px] w-full mx-auto">
+          <CoursesHero />
+        </div>
+      )}
+
+      {isPrivacyPolicyPage && (
+        <div className="max-w-[1440px] w-full mx-auto">
+          <CoursesHero />
+        </div>
+      )}
+
+      {isTermAndConditionsPage && (
         <div className="max-w-[1440px] w-full mx-auto">
           <CoursesHero />
         </div>
