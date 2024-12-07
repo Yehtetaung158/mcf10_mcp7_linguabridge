@@ -1,5 +1,6 @@
 import { Outlet, useLocation } from "react-router-dom";
 
+import { dateImage } from "../assets/Courses/homeImages/coursesHomeImagesPaths";
 import CoursesHero from "../feature/courses/components/coursesHome/CoureseHero";
 import Footer from "./Footer";
 import Header from "./Header";
@@ -32,7 +33,27 @@ const MainLayout = () => {
 
       {isTermAndConditionsPage && (
         <div className="max-w-[1440px] w-full mx-auto">
-          <CoursesHero />
+          <CoursesHero
+            title={"What do you want to learn?"}
+            text={
+              "Grow your skill with the most reliable online courses and certifications"
+            }
+          />
+        </div>
+      )}
+
+      {isPrivacyPolicyPage && (
+        <div className="max-w-[1440px] w-full mx-auto">
+          <CoursesHero
+            image={dateImage}
+            title={"We Protect What Matters: Your Data"}
+          />
+        </div>
+      )}
+
+      {isTermAndConditionsPage && (
+        <div className="max-w-[1440px] w-full mx-auto">
+          <CoursesHero image={dateImage} title={"Terms & Conditions"} />
         </div>
       )}
 
