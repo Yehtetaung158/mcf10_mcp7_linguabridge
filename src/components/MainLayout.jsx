@@ -19,19 +19,7 @@ const MainLayout = () => {
       </div>
 
       {/* Hero Image */}
-      {!pathName && isCoursesPage   && (
-        <div className="max-w-[1440px] w-full mx-auto">
-          <CoursesHero />
-        </div>
-      )}
-
-      {isPrivacyPolicyPage && (
-        <div className="max-w-[1440px] w-full mx-auto">
-          <CoursesHero />
-        </div>
-      )}
-
-      {isTermAndConditionsPage && (
+      {!pathName && isCoursesPage && (
         <div className="max-w-[1440px] w-full mx-auto">
           <CoursesHero
             title={"What do you want to learn?"}
