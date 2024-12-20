@@ -2,8 +2,10 @@ import React from "react";
 import android from "../../../assets/Home/android.png";
 import ios from "../../../assets/Home/ios.png";
 import Iphone_Mockup from "../../../assets/Home/Iphone_Mockup.png";
-import vector from "../../../assets/Home/vector.png";
+// import vector from "../../../assets/Home/vector.png";
 import { div } from "framer-motion/client";
+import vector from '@/assets/Home/vector.png';
+
 
 const AppDownloadSection = () => {
   return (
