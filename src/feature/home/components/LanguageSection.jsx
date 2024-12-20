@@ -58,21 +58,7 @@ const LanguageSection = () => {
         </p>
       </div>
 
-      {/* <div className="w-full bg-cyan-100 border md:h-[75px] lg:h-[85px] mt-10 rounded-lg mx-auto flex justify-center items-center">
-        <ul className="md:flex md:gap-4">
-          {Object.keys(coursesData).map((language) => (
-            <li key={language}>
-              <LanguageBtn
-                selectedLanguage={selectedLanguage}
-                setSelectedLanguage={setSelectedLanguage}
-                language={language}
-              />
-            </li>
-          ))}
-        </ul>
-      </div> */}
-
-      <div className="w-full bg-cyan-100 border sm:h-[180px] md:h-[75px] lg:h-[85px] mt-10 rounded-lg mx-auto flex justify-center items-center">
+      <div className="w-full bg-cyan-100 border py-3 sm:py-0 sm:h-[180px] md:h-[75px] lg:h-[85px] mt-10 rounded-lg mx-auto flex justify-center items-center">
         <ul className="sm:w-[60%] sm:h-full sm:flex sm:gap-2 sm:flex-wrap sm:items-center sm:justify-center md:w-full">
           {Object.keys(coursesData).map((language) => (
             <li key={language}>

@@ -14,14 +14,14 @@ const AppDownloadSection = () => {
           </h1>
           <div className="flex gap-5 items-center justify-center lg:mb-3 xl:mb-0">
             <img src={vector} alt="" className="border p-2" />
-            <p className="md:text-md text-neutral-50">
+            <p className="md:text-md max-sm:bg-pink-100 text-neutral-50">
               Download our app for easy access to all courses, progress
               tracking, and more. Learn languages at your convenience, wherever
               you are.
             </p>
           </div>
 
-          <div className="flex gap-5 md:justify-start">
+          <div className="flex flex-col md:flex-row gap-5 md:justify-start">
             <img
               src={android}
               alt="Android"
