@@ -82,6 +82,7 @@ const LanguageSection = () => {
         <button
           onClick={handlePrevious}
           className="bg-gray-200 border border-neutral-400 text-white md:size-12 lg:size-14 rounded-full sm:hidden md:block"
+          className="bg-gray-200 border border-neutral-400 text-white size-14 rounded-full  "
         >
           <GrLinkPrevious size={20} className="mx-auto text-black" />
         </button>
@@ -95,6 +96,7 @@ const LanguageSection = () => {
           onClick={handleNext}
           className="bg-gray-200  
              text-white md:size-12 lg:size-14 rounded-full border border-neutral-400 sm:hidden md:block"
+             text-white size-14 rounded-full border border-neutral-400"
         >
           <GrLinkNext size={20} className="mx-auto text-black" />
         </button>
