@@ -1,8 +1,10 @@
 import React from "react";
+import lightLogo from "../assets/logo_light.png";
+import darkLogo from "../assets/logo.png";
 
 const Logo = ({ theme, className = "" }) => {
   const logoSrc =
-    theme === "dark" ? "src/assets/logo.png" : "src/assets/logo_light.png";
+    theme === "dark" ? darkLogo : lightLogo;
   const additionalClass = theme === "dark" ? "max-w-[93px]" : "";
 
   return (
