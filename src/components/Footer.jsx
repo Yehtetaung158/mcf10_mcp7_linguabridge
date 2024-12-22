@@ -20,6 +20,8 @@ const Footer = () => {
 
   const currentParth = useLocation().pathname;
   const coursesDetail = currentParth.split("/")[2];
+  const isHomePage= currentParth === '/' ? true : false ;
+  console.log( " I am home page ", isHomePage)
   const isIputFooter =
     currentParth === "/" ||
     currentParth === "/apply-form" ||
@@ -30,7 +32,7 @@ const Footer = () => {
   console.log(isIputFooter);
   return (
     <footer className=" mt-auto">
-      {isIputFooter && (
+      {isIputFooter && !isHomePage && (
         <div className=" w-full h-[200px] sm:h-[207px] lg:h-[150px]"></div>
       )}
       <div className=" bg-neutral-700  text-neutral-100 text-xs sm:text-ps_font_size lg:text-pm_font_size w-full relative ">

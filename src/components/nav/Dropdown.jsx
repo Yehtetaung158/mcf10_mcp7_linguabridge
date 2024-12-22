@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-const Dropdown = ({setOpen}) => {
+const Dropdown = ({ setOpen }) => {
   return (
     <div
       id="dropdown"
@@ -13,55 +13,45 @@ const Dropdown = ({setOpen}) => {
       >
         <NavLink
           to="/"
-      
-      onClick={()=>setOpen(false)}    className={({ isActive }) =>
-            `block px-4 py-2 ${
-              isActive ? "text-neutral-900" : " text-neutral"
-            }`
+          onClick={() => setOpen(false)}
+          className={({ isActive }) =>
+            `block px-4 py-2 ${isActive ? "text-neutral-900" : " text-neutral"}`
           }
         >
           Home
         </NavLink>
         <NavLink
           to="/courses"
-          onClick={()=>setOpen(false)}
+          onClick={() => setOpen(false)}
           className={({ isActive }) =>
-            `block px-4 py-2 ${
-              isActive ? "text-neutral-900" : " text-neutral"
-            }`
+            `block px-4 py-2 ${isActive ? "text-neutral-900" : " text-neutral"}`
           }
         >
           Courses
         </NavLink>
         <NavLink
           to="/about"
- 
- onClick={()=>setOpen(false)}         className={({ isActive }) =>
-            `block px-4 py-2 ${
-              isActive ? "text-neutral-900" : " text-neutral"
-            }`
+          onClick={() => setOpen(false)}
+          className={({ isActive }) =>
+            `block px-4 py-2 ${isActive ? "text-neutral-900" : " text-neutral"}`
           }
         >
           About
         </NavLink>
         <NavLink
           to="/contact"
-          onClick={()=>setOpen(false)}
+          onClick={() => setOpen(false)}
           className={({ isActive }) =>
-            `block px-4 py-2 ${
-              isActive ? "text-neutral-900" : " text-neutral"
-            }`
+            `block px-4 py-2 ${isActive ? "text-neutral-900" : " text-neutral"}`
           }
         >
           Contact
         </NavLink>
         <NavLink
           to="/become-an-instructor"
-          onClick={()=>setOpen(false)}
+          onClick={() => setOpen(false)}
           className={({ isActive }) =>
-            `block px-4 py-2 ${
-              isActive ? "text-neutral-900" : " text-neutral"
-            }`
+            `block px-4 py-2 ${isActive ? "text-neutral-900" : " text-neutral"}`
           }
         >
           Become an Instructor
