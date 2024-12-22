@@ -33,7 +33,7 @@ const Footer = () => {
   return (
     <footer className=" mt-auto">
       {isIputFooter && !isHomePage && (
-        <div className=" w-full h-[200px] sm:h-[207px] lg:h-[150px] bg-yellow-300"></div>
+        <div className=" w-full h-[200px] sm:h-[207px] lg:h-[150px]"></div>
       )}
       <div className=" bg-neutral-700  text-neutral-100 text-xs sm:text-ps_font_size lg:text-pm_font_size w-full relative ">
         {isIputFooter && (
