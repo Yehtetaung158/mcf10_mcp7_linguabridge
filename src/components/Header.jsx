@@ -1,9 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link, NavLink } from "react-router-dom";
 import Logo from "./Logo";
-import Driopdwon from "./nav/Driopdwon";
-const userIccon = "../src/assets/icons/navigation/User.svg";
-const menuIcon = "../src/assets/icons/navigation/hamburger_menu.svg";
 const wave = "../src/assets/Become an instructor/wave.svg";
 import Dropdown from "./nav/Dropdown";
 import userIcon from "../assets/icons/navigation/User.svg";
