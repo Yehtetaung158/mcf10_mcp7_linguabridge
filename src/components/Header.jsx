@@ -1,6 +1,10 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link, NavLink } from "react-router-dom";
 import Logo from "./Logo";
+import Driopdwon from "./nav/Driopdwon";
+const userIccon = "../src/assets/icons/navigation/User.svg";
+const menuIcon = "../src/assets/icons/navigation/hamburger_menu.svg";
+const wave = "../src/assets/Become an instructor/wave.svg";
 import Dropdown from "./nav/Dropdown";
 import userIcon from "../assets/icons/navigation/User.svg";
 import menuIcon from "../assets/icons/navigation/hamburger_menu.svg";
@@ -30,7 +34,8 @@ const Header = () => {
   }, []);
 
   return (
-    <nav className="w-full">
+    <nav className="w-full relative">
+      <img src={wave} alt="wave" className="absolute top-0 left-3" />
       <div className="flex justify-between items-center text-neutral-900 px-2 h-[80px] max-w-[1208px] mx-auto">
         <Link to="/" className="size-24 flex items-center justify-center">
           <Logo theme={"dark"} />
