@@ -5,6 +5,8 @@ import FirstImg from "../../../assets/About-Us/aboutUs_hero.png";
 import Review from "../../../assets/About-Us/Review.png";
 
 const FirstSection = () => {
+
+  
   return (
     <section className="mt-10 relative">
       <img
