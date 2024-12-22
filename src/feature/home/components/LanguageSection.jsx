@@ -58,8 +58,22 @@ const LanguageSection = () => {
         </p>
       </div>
 
-      <div className="w-full bg-cyan-100 border h-[85px] mt-10 rounded-lg mx-auto flex justify-center items-center">
-        <ul className="flex gap-4">
+      {/* <div className="w-full bg-cyan-100 border md:h-[75px] lg:h-[85px] mt-10 rounded-lg mx-auto flex justify-center items-center">
+        <ul className="md:flex md:gap-4">
+          {Object.keys(coursesData).map((language) => (
+            <li key={language}>
+              <LanguageBtn
+                selectedLanguage={selectedLanguage}
+                setSelectedLanguage={setSelectedLanguage}
+                language={language}
+              />
+            </li>
+          ))}
+        </ul>
+      </div> */}
+
+      <div className="w-full bg-cyan-100 border sm:h-[180px] md:h-[75px] lg:h-[85px] mt-10 rounded-lg mx-auto flex justify-center items-center">
+        <ul className="sm:w-[60%] sm:h-full sm:flex sm:gap-2 sm:flex-wrap sm:items-center sm:justify-center md:w-full">
           {Object.keys(coursesData).map((language) => (
             <li key={language}>
               <LanguageBtn
@@ -72,7 +86,7 @@ const LanguageSection = () => {
         </ul>
       </div>
 
-      <div className="mt-10 grid grid-cols-4 gap-3">
+      <div className="mt-10 grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
         {coursesData[selectedLanguage]?.map((course, index) => (
           <CourseCardSection course={course} key={index} />
         ))}
@@ -81,7 +95,7 @@ const LanguageSection = () => {
       <div className="flex gap-5 mt-10 items-center">
         <button
           onClick={handlePrevious}
-          className="bg-gray-200 border border-neutral-400 text-white size-14 rounded-full  "
+          className="bg-gray-200 border border-neutral-400 text-white md:size-12 lg:size-14 rounded-full sm:hidden md:block"
         >
           <GrLinkPrevious size={20} className="mx-auto text-black" />
         </button>
@@ -94,14 +108,13 @@ const LanguageSection = () => {
         <button
           onClick={handleNext}
           className="bg-gray-200  
-             text-white size-14 rounded-full border border-neutral-400"
+             text-white md:size-12 lg:size-14 rounded-full border border-neutral-400 sm:hidden md:block"
         >
           <GrLinkNext size={20} className="mx-auto text-black" />
         </button>
       </div>
-
-      <div className="flex flex-col mt-28 gap-10 relative">
-        <h2 className="text-4xl font-semibold tracking-wide">
+      <div className="flex flex-col mt-28 gap-8 relative">
+        <h2 className="hidden xl:block lg:text-3xl xl:text-4xl font-bold">
           Your Language Learning Journey in Your Pocket!
         </h2>
         <AppDownloadSection />
