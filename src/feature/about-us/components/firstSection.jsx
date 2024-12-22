@@ -1,8 +1,8 @@
 import React from "react";
-import decorationImg from "../../../../assets/About-Us/decoration.png";
-import frame from "../../../../assets/About-Us/frameNew2.png";
-import FirstImg from "../../../../assets/About-Us/aboutUs_hero.png";
-import Review from "../../../../assets/About-Us/Review.png";
+import decorationImg from "../../../assets/About-Us/decoration.png";
+import frame from "../../../assets/About-Us/frameNew2.png";
+import FirstImg from "../../../assets/About-Us/aboutUs_hero.png";
+import Review from "../../../assets/About-Us/Review.png";
 
 const FirstSection = () => {
   return (

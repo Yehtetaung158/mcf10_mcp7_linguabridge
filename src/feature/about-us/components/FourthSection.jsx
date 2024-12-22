@@ -1,9 +1,9 @@
 import React from "react";
-import Instructor from "../../../../assets/About-Us/Instructor.png";
+import Instructor from "../../../assets/About-Us/Instructor.png";
 import TeamInstructorCard from "./TeamInstructorCard";
-import person1 from "../../../../assets/About-Us/p1.png";
-import person2 from "../../../../assets/About-Us/p2.png";
-import person3 from "../../../../assets/About-Us/p3.png";
+import person1 from "../../../assets/About-Us/p1.png";
+import person2 from "../../../assets/About-Us/p2.png";
+import person3 from "../../../assets/About-Us/p3.png";
 import FifthSection from "./FifthSection";
 
 const FourthSection = () => {
