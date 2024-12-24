@@ -9,8 +9,8 @@
 - Thet Ngon Phoo
 
 #### Frontend Team (MCF_10 - MMSIT Connection)
-- Ye Htet Aung  
-- David Sang  
 - Hannah Fe  
+- David Sang  
 - Zett  
 - Keo Tan
+- Ye Htet Aung  
