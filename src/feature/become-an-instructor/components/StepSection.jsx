@@ -16,7 +16,7 @@ const StepSection = () => {
             </p>
           </div>
 
-          <h1 className=" w-full px-12 font-header_font_style font-miniHeader_weight text-p_font_size  md:text-[40px]  text-neutral-900 ">
+          <h1 className=" w-full px-12 font-header_font_style font-miniHeader_weight text-[15px]  md:text-[40px]  text-neutral-900 ">
             Become an Instructor: Step-by-Step
           </h1>
         </div>
