@@ -1,16 +1,16 @@
-# React + Vite
+# LinguaBridge
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Online Learning Platform
 
-Currently, two official plugins are available:
+### Team Members
 
-- Design by MCP_7 (MMSIT Connection)
-  --Ye Aung Zaw
-  --Thet Ngon Phoo 
-- Fronted by MCF_10 (MMSIT Connection)
-  --Ye Htet Aung
-  --David Sang
-  --Hannah__Fe
-  --Zett
-  --Keo Tan
-# mcf10
+#### Design Team (MCP_7 - MMSIT Connection)
+- Ye Aung Zaw  
+- Thet Ngon Phoo
+
+#### Frontend Team (MCF_10 - MMSIT Connection)
+- Ye Htet Aung  
+- David Sang  
+- Hannah Fe  
+- Zett  
+- Keo Tan
