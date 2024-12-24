@@ -4,7 +4,7 @@ import img1 from "../../../assets/Become an instructor/instructor_hero.png";
 const HeroSection = () => {
   return (
     <section className="w-full  md:py-[120px] relative">
-      <main className="max-w-[1207px]  lg:flex justify-between  mx-auto  max-lg:p-10">
+      <main className="max-w-[1207px]  lg:flex justify-between  mx-auto px-5  max-lg:p-10">
         <div className=" w-fit h-fit space-y-10  ">
           <p className=" w-fit rounded-[4px] px-[8px] py-[4px] text-ps_font_size leading-[16.94px] text-neutral-900 bg-secondary-color">
             🚀 Transform Lives Through the Power of Language Education
