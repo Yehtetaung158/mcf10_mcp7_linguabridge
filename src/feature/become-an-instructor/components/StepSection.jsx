@@ -6,7 +6,7 @@ import s3 from "../../../assets/Become an instructor/step3.svg";
 
 const StepSection = () => {
   return (
-    <section className="w-full  md:py-[120px]">
+    <section className="w-full  lg:py-[120px]">
       <main className="max-w-[1207px]  lg:flex flex-col justify-between items-center mx-auto  max-lg:p-10">
         <div className=" w-fit h-fit space-y-10 mx-auto text-center  ">
           <div className=" w-fit mx-auto flex gap-3  rounded-[4px] px-[8px] py-[4px] text-ps_font_size leading-[16.94px] text-neutral-900 bg-secondary-color">

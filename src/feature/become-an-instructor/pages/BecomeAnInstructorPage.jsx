@@ -2,6 +2,7 @@ import React from 'react'
 import HeroSection from '../components/HeroSection'
 import StepSection from '../components/StepSection'
 import PlatformSection from '../components/PlatformSection'
+import RequirementSection from '../components/RequirementSection'
 
 const BecomeAnInstructorPage = () => {
   return (
@@ -9,6 +10,7 @@ const BecomeAnInstructorPage = () => {
       <HeroSection />
       <StepSection />
       <PlatformSection/>
+      <RequirementSection/>
     </>
   )
 }
