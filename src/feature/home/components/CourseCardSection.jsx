@@ -1,4 +1,5 @@
 import React from "react";
+import { CiCalendar, CiClock2 } from "react-icons/ci";
 import RatingStar from "../components/RatingStar";
 
 const CourseCardSection = ({ course }) => {
@@ -9,10 +10,10 @@ const CourseCardSection = ({ course }) => {
         alt=""
         className="h-52 object-cover object-center"
       />
-      <h3 className="font-bold text-lg  text-neutral-700 group-hover:text-cyan-600 duration-75">
+      <h3 className="font-bold text-lg  text-neutral-700 group-hover:text-cyan-600 group-hover:translate-y-[-5px] group-hover:scale-105 transition-all duration-300 ">
         {course.title}
       </h3>
-      <h3 className=" font-bold text-lg text-neutral-700 group-hover:text-cyan-600 duration-75">
+      <h3 className=" font-bold text-lg text-neutral-700 group-hover:text-cyan-600 group-hover:translate-y-[-5px] group-hover:scale-105 transition-all duration-300 ">
         {course["sub-title"]}
       </h3>
       <div className="flex justify-between">
@@ -27,14 +28,20 @@ const CourseCardSection = ({ course }) => {
         <RatingStar />
       </div>
 
-      <p className="group-hover:text-cyan-600 duration-75 text-pl_font_size font-miniHeader_weight">
+      <p className="group-hover:text-cyan-600 group-hover:translate-y-[-5px] group-hover:scale-105 transition-all duration-300 text-pl_font_size font-miniHeader_weight">
         {course.fee}
       </p>
-      <div className="border-b-2 mb-2"></div>
+      <div className="border-b-2 mb-2 group-hover:text-cyan-600 group-hover:translate-y-[-5px] group-hover:scale-105 transition-all duration-300 "></div>
 
       <div className="flex justify-between items-center">
-        <p className="inline-block">{course.hour}</p>
-        <p className="inline-block ">{course.lecture}</p>
+        <div className="flex gap-1 items-center">
+          <CiClock2 />
+          <p className="inline-block">{course.hour}</p>
+        </div>
+        <div className="flex gap-1 items-center">
+          <CiCalendar />
+          <p className="inline-block ">{course.lecture}</p>
+        </div>
       </div>
     </div>
   );

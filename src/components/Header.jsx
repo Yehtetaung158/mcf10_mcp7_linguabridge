@@ -1,10 +1,12 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link, NavLink } from "react-router-dom";
 import Logo from "./Logo";
-import Driopdwon from "./nav/Driopdwon";
-const userIccon = "../src/assets/icons/navigation/User.svg";
-const menuIcon = "../src/assets/icons/navigation/hamburger_menu.svg";
-const wave = "../src/assets/Become an instructor/wave.svg";
+// const wave = "../src/assets/Become an instructor/wave.svg";
+import wave from "../assets/Become an instructor/wave.svg";
+import Dropdown from "./nav/Dropdown";
+import userIcon from "../assets/icons/navigation/User.svg";
+import menuIcon from "../assets/icons/navigation/hamburger_menu.svg";
+
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -19,7 +21,7 @@ const Header = () => {
         !dropdownRef.current.contains(event.target) &&
         !buttonRef.current.contains(event.target)
       ) {
-        setOpen(false); 
+        setOpen(false);
       }
     };
 
@@ -48,7 +50,7 @@ const Header = () => {
           </NavLink>
           <div className="flex gap-2 items-center justify-center relative">
             <Link to={"/login"}>
-              <img src={userIccon} alt="userIcon" />
+              <img src={userIcon} alt="userIcon" />
             </Link>
             <button
               className="md:hidden"
@@ -59,7 +61,8 @@ const Header = () => {
             </button>
             {open && (
               <div ref={dropdownRef}>
-                <Driopdwon setOpen={setOpen} />
+                {/* <Dropdown setOpen={setOpen} /> */}
+                <Dropdown setOpen={setOpen} />
               </div>
             )}
           </div>
