@@ -8,53 +8,50 @@ import tutor from "../../../assets/Home/tutor.png";
 import InformationSection from "./InformationSection";
 import LanguageSection from "./LanguageSection";
 import RatingStar from "./RatingStar";
+import Bgimg from '../../../assets/Home/Frame1000006721.png';
+import GirlImg from '../../../assets/Home/young-asian-business-woman-isolated-background-showing-victory-sign-with-both-hands 1.png';
+import HeaderAnimation from "./HeaderAnimation";
 
 const IntroductionSection = () => {
   return (
     <div className="mx-auto">
-      <div className="grid md:grid-cols-1 lg:h-[1100px] xl:h-[550px] w-full xl:p-0 xl:grid-cols-2 xl:gap-4 relative">
+      <div className="grid md:grid-cols-1 lg:h-[1100px] xl:h-[550px] w-full xl:p-0 xl:grid-cols-2 xl:gap-4 relative mb-8">
         <div className="col-span-1 md:h-1/2 xl:h-1/2 flex flex-col py-3">
-          <div className="flex flex-col md:gap-10 md:h-full md:py-5 justify-between">
+          <div className="flex flex-col space-y-4 justify-between">
             <p className="md:text-pm_font_size sm:mb-5 md:mb-10">
               🤩 Unlock Your Potential Through Language Today!
             </p>
-            <h1 className="md:text-4xl lg:text-5xl font-header_font_style font-bold leading-tight tracking-wide [word-spacing:0.25em] sm:mb-5 md:mb-10">
-              Explore the World <br /> Through Language
+            <h1 className="md:text-4xl lg:text-5xl font-header_font_style font-bold leading-tight tracking-wide [word-spacing:0.25em] sm:mb-5 md:mb-10 relative">
+              Explore the World <br /> Through <span className="inline-block absolute w-1/2 "><HeaderAnimation/></span>
             </h1>
             <p className="text-neutral-500 md:text-pl_font_size sm:mb-5 md:mb-7">
-              Learn foreign languages effortlessly with expert guidance in your
-              native Myanmar language. Start your journey today!
+              Learn foreign languages effortlessly with expert guidance in your native Myanmar Language
+             
+              . Start your journey today!
             </p>
             <button className="bg-cyan-500 hover:bg-cyan-600 duration-300 text-neutral-100 px-6 py-2 rounded-md self-start mt-auto">
               Learn Now
             </button>
           </div>
         </div>
-
-        <div className="col-span-1 relative h-full md:w-3/4 sm:mt-5 md:mx-auto md:mt-5 lg:mx-auto flex xl:w-full xl:justify-end">
-          <div className="w-[85%] md:h-full relative md:mx-auto lg:mx-auto">
-            <img
-              src={svg}
-              alt=""
-              className="absolute z-20 top-0 left-0 -translate-x-20 -translate-y-5 rounded-lg"
-            />
-            <img
-              src={heroImg}
-              alt="Hero Image"
-              className="h-full w-full object-cover object-center"
-            />
-          </div>
-
-          <div className="absolute border border-cyan-600 z-30 w-[300px] h-[100px] bg-white p-2 rounded-xl shadow-md px-10 py-4 sm:translate-y-9 md:translate-x-10 md:translate-y-9 xl:translate-x-10 xl:translate-y-9 bottom-0 right-0">
-            <div className="flex justify-between">
-              <p className="font-bold text-xl mb-1">4.8</p>
-              <RatingStar totalStars={5} initialRating={4.5} />
+        <div className=" w-full h-full flex justify-center items-center relative">
+          <div className="  relative w-4/5 h-5/6 max-w-[500px] min-h-[500px] max-sm:min-h-[370px] flex justify-center items-end">
+            <div className={`w-full h-full flex justify-center items-end`}>
+              <img src={svg} alt="" className=" absolute top-0 left-0 max-sm:size-20 " />
+              <img src={Bgimg} alt="" className=" absolute max-sm:max-h-[370px]" />
+              <img src={GirlImg} alt="" className=" absolute max-sm:max-h-[370px]" />
             </div>
-            <p className="text-pm_font_size text-neutral-700">
-              Reviewed by 300+ students
-            </p>
+            <div className=" z-10 bg-neutral-50 rounded-lg p-4 absolute  transform sm:translate-y-1/2 sm:translate-x-[70%] xl:translate-x-[80%]  -translate-y-1/2">
+              <div className=" flex  gap-4">
+                <h1>4.8</h1>
+                <div><RatingStar /></div>
+              </div>
+              <p className=" text-neutral-600">Reviewed by 300+ students</p>
+            </div>
           </div>
         </div>
+
+
       </div>
 
       <div className="col-span-2 text-center w-full sm:mt-32 lg:mt-44 xl:mt-28">
