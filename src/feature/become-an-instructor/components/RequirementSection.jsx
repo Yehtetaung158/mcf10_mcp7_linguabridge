@@ -1,14 +1,42 @@
-import React from "react";
+import React, { useEffect } from "react";
 import p1 from "../../../assets/Become an instructor/platform.svg";
 import p2 from "../../../assets/Become an instructor/bulb.svg";
 import p3 from "../../../assets/Become an instructor/Check2.svg";
 import p4 from "../../../assets/Become an instructor/crown.svg";
 import p5 from "../../../assets/Become an instructor/requirement.svg";
 import frame from "../../../assets/Become an instructor/Frame.svg";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const RequirementSection = () => {
+  const controls = useAnimation();
+
+  const [ref, inView] = useInView({
+    threshold: 0.5,
+    triggerOnce: true,
+  });
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
+
   return (
-    <section className="w-full  lg:py-[120px]">
+    <motion.section
+      ref={ref}
+      initial="hidden"
+      animate={controls}
+      variants={{
+        visible: {
+          opacity: 1,
+          x: 0,
+          transition: { duration: 1.5, delay: 0.8, ease: "easeOut" },
+        },
+        hidden: { opacity: 0, x: 100 },
+      }}
+      className="w-full  lg:py-[120px]"
+    >
       <main className="max-w-[1207px]  lg:flex justify-between  mx-auto p-5  max-lg:p-10">
         <div className="w-full grid grid-cols-1 lg:grid-cols-2">
           <div className="items-center max-lg:mt-10">
@@ -60,7 +88,7 @@ const RequirementSection = () => {
           </div>
         </div>
       </main>
-    </section>
+    </motion.section>
   );
 };
 

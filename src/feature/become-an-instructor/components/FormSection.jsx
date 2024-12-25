@@ -1,13 +1,24 @@
 import { RiExpandUpDownLine } from "react-icons/ri";
 import { GoUpload } from "react-icons/go";
 import { useRef } from "react";
+import { motion } from "framer-motion";
 
 const FormSection = () => {
   const uploadRef = useRef();
   return (
     <section className="w-full md:py-[10px]">
       <main>
-        <div className="w-full h-[250px] bg-mobile md:bg-tablet lg:bg-pc bg-cover bg-center rounded-2xl"></div>
+        <motion.div
+          animate={{
+            scale: [1, 1.02, 1],
+          }}
+          transition={{
+            duration: 3,
+            repeat: Infinity,
+            ease: "easeInOut",
+          }}
+          className="w-full h-[250px] bg-mobile md:bg-tablet lg:bg-pc bg-cover bg-center rounded-2xl"
+        ></motion.div>
         <div className="w-full h-fit">
           <form className="w-full flex flex-col justify-center items-center py-20">
             <h1 className="font-header_font_style font-miniHeader_weight text-[15px] md:text-[24px] text-neutral-900 mb-16">
@@ -123,15 +134,14 @@ const FormSection = () => {
                   id="edu_file"
                 />
                 <div className="flex justify-end">
-                <button
-                  className="w-fit flex items-center justify-end h-[40px] rounded-[4px] mb-5 px-4 bg-[#17A2B8] text-white"
-                  type="button"
-                  onClick={() => uploadRef.current.click()}
-                >
-                  <GoUpload />
-                </button>
+                  <button
+                    className="w-fit flex items-center justify-end h-[40px] rounded-[4px] mb-5 px-4 bg-[#17A2B8] text-white"
+                    type="button"
+                    onClick={() => uploadRef.current.click()}
+                  >
+                    <GoUpload />
+                  </button>
                 </div>
-                
               </div>
               <div className="flex flex-col gap-2 mt-5">
                 <label
