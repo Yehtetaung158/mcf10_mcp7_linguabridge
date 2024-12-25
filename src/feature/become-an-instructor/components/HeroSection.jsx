@@ -1,5 +1,6 @@
 import React from "react";
 import img1 from "../../../assets/Become an instructor/instructor_hero.png";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
@@ -17,9 +18,9 @@ const HeroSection = () => {
             Learn foreign languages effortlessly with expert guidance in your
             native Myanmar language. Start your journey today!
           </p>
-          <button className="w-[137px]  rounded-[4px] px-[8px] py-[12px] bg-primary-color text-neutral mt-10 ">
+          <Link to={'/become-an-instructor/apply-form'} className="w-[137px] text-center rounded-[4px] px-[8px] py-[12px] bg-primary-color text-neutral mt-10 ">
             Apply Now
-          </button>
+          </Link>
         </div>
         <div className="  max-lg:mt-10">
           <img src={img1} className="w-full " alt="" />
