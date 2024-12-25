@@ -1,8 +1,9 @@
 import React from 'react'
+import FormSection from '../components/FormSection'
 
 const ApplyFormPage = () => {
   return (
-    <div>ApplyFormPage</div>
+    <FormSection />
   )
 }
 

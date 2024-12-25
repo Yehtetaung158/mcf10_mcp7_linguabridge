@@ -73,6 +73,11 @@ export default {
       transitionProperty: {
         "transform-opacity": "transform, opacity",
       },
+      backgroundImage: {
+        pc: "url('../assets/Become an instructor/FormPC.svg')",
+        tablet: "url('../assets/Become an instructor/FormTablet.svg')",
+        mobile: "url('../assets/Become an instructor/FormMobile.svg')",
+      },
     },
   },
   plugins: [],
