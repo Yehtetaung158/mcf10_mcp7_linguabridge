@@ -1,8 +1,8 @@
 import React from "react";
-import Facebook from "../../../../assets/About-Us/Facebook.png";
-import Insta from "../../../../assets/About-Us/Insta.png";
-import Twitter from "../../../../assets/About-Us/Twitter.png";
-import Linkdin from "../../../../assets/About-Us/Linkdin.png";
+import Facebook from "../../../assets/About-Us/Facebook.png";
+import Insta from "../../../assets/About-Us/Insta.png";
+import Twitter from "../../../assets/About-Us/Twitter.png";
+import Linkdin from "../../../assets/About-Us/Linkdin.png";
 
 const TeamInstructorCard = ({ image, name, role }) => {
   return (
