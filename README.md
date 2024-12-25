@@ -1,9 +1,16 @@
-# React + Vite
+# LinguaBridge
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Online Learning Platform
 
-Currently, two official plugins are available:
+### Team Members
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# mcf10
+#### Design Team (MCP_7 - MMSIT Connection)
+- Ye Aung Zaw  
+- Thet Ngon Phoo
+
+#### Frontend Team (MCF_10 - MMSIT Connection)
+- Hannah Fe  
+- David Sang  
+- Zett  
+- Keo Tan
+- Ye Htet Aung  
