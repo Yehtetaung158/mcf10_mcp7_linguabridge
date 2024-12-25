@@ -58,21 +58,7 @@ const LanguageSection = () => {
         </p>
       </div>
 
-      {/* <div className="w-full bg-cyan-100 border md:h-[75px] lg:h-[85px] mt-10 rounded-lg mx-auto flex justify-center items-center">
-        <ul className="md:flex md:gap-4">
-          {Object.keys(coursesData).map((language) => (
-            <li key={language}>
-              <LanguageBtn
-                selectedLanguage={selectedLanguage}
-                setSelectedLanguage={setSelectedLanguage}
-                language={language}
-              />
-            </li>
-          ))}
-        </ul>
-      </div> */}
-
-      <div className="w-full bg-cyan-100 border sm:h-[180px] md:h-[75px] lg:h-[85px] mt-10 rounded-lg mx-auto flex justify-center items-center">
+      <div className="w-full bg-cyan-100 border py-3 sm:py-0 sm:h-[180px] md:h-[75px] lg:h-[85px] mt-10 rounded-lg mx-auto flex justify-center items-center">
         <ul className="sm:w-[60%] sm:h-full sm:flex sm:gap-2 sm:flex-wrap sm:items-center sm:justify-center md:w-full">
           {Object.keys(coursesData).map((language) => (
             <li key={language}>
@@ -96,6 +82,7 @@ const LanguageSection = () => {
         <button
           onClick={handlePrevious}
           className="bg-gray-200 border border-neutral-400 text-white md:size-12 lg:size-14 rounded-full sm:hidden md:block"
+          className="bg-gray-200 border border-neutral-400 text-white size-14 rounded-full  "
         >
           <GrLinkPrevious size={20} className="mx-auto text-black" />
         </button>
@@ -109,6 +96,7 @@ const LanguageSection = () => {
           onClick={handleNext}
           className="bg-gray-200  
              text-white md:size-12 lg:size-14 rounded-full border border-neutral-400 sm:hidden md:block"
+             text-white size-14 rounded-full border border-neutral-400"
         >
           <GrLinkNext size={20} className="mx-auto text-black" />
         </button>

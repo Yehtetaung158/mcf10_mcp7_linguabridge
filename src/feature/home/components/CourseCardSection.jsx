@@ -8,12 +8,12 @@ const CourseCardSection = ({ course }) => {
       <img
         src={course.imgUrl}
         alt=""
-        className="h-52 object-cover object-center"
+        className="h-64 object-cover object-center"
       />
       <h3 className="font-bold text-lg  text-neutral-700 group-hover:text-cyan-600 group-hover:translate-y-[-5px] group-hover:scale-105 transition-all duration-300 ">
         {course.title}
       </h3>
-      <h3 className=" font-bold text-lg text-neutral-700 group-hover:text-cyan-600 group-hover:translate-y-[-5px] group-hover:scale-105 transition-all duration-300 ">
+      <h3 className="font-bold text-lg text-neutral-700 group-hover:text-cyan-600 group-hover:translate-y-[-5px] group-hover:scale-105 transition-all duration-300 ">
         {course["sub-title"]}
       </h3>
       <div className="flex justify-between">
