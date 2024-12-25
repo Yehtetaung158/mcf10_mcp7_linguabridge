@@ -57,7 +57,7 @@ const FormSection = () => {
                   className="w-[250px] lg:w-[500px] h-[40px] rounded-[4px] border border-[#A3A3A3] px-4 appearance-none focus:outline-none focus:ring-2 focus:ring-blue-500"
                   defaultValue=""
                 >
-                  <option value="" disabled>
+                  <option value="" disabled className="text-opacity-90">
                     Select an option
                   </option>
                   <option value="Korean">Korean</option>
@@ -93,14 +93,17 @@ const FormSection = () => {
                   type="file"
                   id="edu_file"
                 />
-                <button
-                  className="w-fit flex items-center justify-end h-[40px] rounded-[4px] mb-5 px-4 bg-[#17A2B8] text-white"
-                  type="button"
-                  onClick={() => uploadRef.current.click()}
-                >
-                  <GoUpload />
-                </button>
+                <div className="flex justify-end">
+                  <button
+                    className="h-[40px] rounded-[4px] px-4 bg-[#17A2B8] text-white"
+                    type="button"
+                    onClick={() => uploadRef.current.click()}
+                  >
+                    <GoUpload />
+                  </button>
+                </div>
               </div>
+
               <div className="flex flex-col gap-2 mt-5">
                 <label
                   htmlFor="certi_file"
@@ -119,6 +122,7 @@ const FormSection = () => {
                   type="file"
                   id="edu_file"
                 />
+                <div className="flex justify-end">
                 <button
                   className="w-fit flex items-center justify-end h-[40px] rounded-[4px] mb-5 px-4 bg-[#17A2B8] text-white"
                   type="button"
@@ -126,6 +130,8 @@ const FormSection = () => {
                 >
                   <GoUpload />
                 </button>
+                </div>
+                
               </div>
               <div className="flex flex-col gap-2 mt-5">
                 <label
