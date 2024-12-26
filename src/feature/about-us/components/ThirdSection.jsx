@@ -1,7 +1,7 @@
 import React from "react";
-import Third from "../../../../assets/About-Us/ThirdImg.png";
-import Mission from "../../../../assets/About-Us/MissionImg.png";
-import Green from "../../../../assets/About-Us/Green.png";
+import Third from "../../../assets/About-Us/ThirdImg.png";
+import Mission from "../../../assets/About-Us/MissionImg.png";
+import Green from "../../../assets/About-Us/Green.png";
 
 const ThirdSection = () => {
   return (

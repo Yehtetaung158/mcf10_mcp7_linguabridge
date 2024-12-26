@@ -1,10 +1,12 @@
+/* eslint-disable react/prop-types */
+
 import {
   heroImg,
   heroMobile,
   heroTablet,
 } from "../../../../assets/Courses/homeImages/coursesHomeImagesPaths";
 
-const CoursesHero = () => {
+const CoursesHero = ({ text, image, title }) => {
   return (
     <section className="relative text-white bg-primary-color h-[250px] ">
       <img
@@ -24,13 +26,13 @@ const CoursesHero = () => {
       />
 
       <div className="flex flex-col justify-center items-center h-full w-[80%] mx-auto text-center">
-        <h2 className="font-miniHeader_weight text-3xl leading-10">
-          What do you want to learn?
-        </h2>
-        <p className="text-sm">
-          Grow your skill with the most reliable online courses and
-          certifications
-        </p>
+        {image && <img src={image} alt="title image" className="pb-3 " />}
+        {title && (
+          <h2 className="font-miniHeader_weight text-3xl leading-10 pb-3">
+            {title}
+          </h2>
+        )}
+        {text && <p className="text-sm">{text}</p>}
       </div>
       <img
         src={heroMobile}

@@ -1,6 +1,6 @@
 import React from "react";
-import Vision from "../../../../assets/About-Us/Vision.png";
-import Second from "../../../../assets/About-Us/SecondImg.png";
+import Vision from "../../../assets/About-Us/Vision.png";
+import Second from "../../../assets/About-Us/SecondImg.png";
 
 const SecondSection = () => {
   return (

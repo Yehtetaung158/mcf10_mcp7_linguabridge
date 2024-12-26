@@ -7,6 +7,7 @@ import ClockIcon from "./ClockIcon.svg";
 import FirstAid from "./first-aid.svg";
 import Flag from "./Flag.svg";
 import TriangleFlag from "./FlagPennant.png";
+import fullStar from "./Full-star.png";
 import GraduationCap from "./GraduationCap.png";
 import Handshake from "./Handshake.png";
 import SecondaryHouse from "./House.png";
@@ -18,10 +19,17 @@ import MyanmarFlag from "./MyanmarFlag.svg";
 import OliviaBeginner from "./OliviaBeginner.png";
 import oliviaBeginner2 from "./oliviaBeginner2.png";
 import oliviaIntermediate from "./oliviaIntermediate.png";
+import personOne from "./person_1.png";
+import personFour from "./person_2.png";
+import personFive from "./person_3.png";
 import PuzzlePiece from "./PuzzlePiece.png";
 import QuestionMark from "./QuestionMark.png";
 import ShoppingCart from "./ShoppingCart.png";
 import SquaresFour from "./SquaresFour.png";
+import starGroupBig from "./star-group-big.png";
+import starGroup from "./Stars-group.png";
+import personTwo from "./testimonial_2.png";
+import personThree from "./testimonial_3.png";
 import TomHardyIntermediate from "./TomHardyIntermediate.png";
 import UserSound from "./UserSound.png";
 import VideoCameraIcon from "./VideoCameraIcon.svg";
@@ -60,6 +68,14 @@ export {
   Wind,
   XMark,
   XMark2,
+  fullStar,
   oliviaBeginner2,
   oliviaIntermediate,
+  personFive,
+  personFour,
+  personOne,
+  personThree,
+  personTwo,
+  starGroup,
+  starGroupBig,
 };

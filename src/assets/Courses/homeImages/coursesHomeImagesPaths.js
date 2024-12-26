@@ -2,6 +2,7 @@ import bookIcon from "./book-icon.png";
 import sortIcon from "./caret-sort-icon.png";
 import clockIcon from "./clock-icon.png";
 import heroImg from "./coursesHeroImg.png";
+import dateImage from "./date-img.png";
 import heroMobile from "./hero-img-mobile.png";
 import heroTablet from "./hero-img-tablet.png";
 import leftArrowIcon from "./left-arrow-icon.png";
@@ -20,6 +21,7 @@ import tomIntermediateImg from "./tom_Intermediate.png";
 export {
   bookIcon,
   clockIcon,
+  dateImage,
   heroImg,
   heroMobile,
   heroTablet,
