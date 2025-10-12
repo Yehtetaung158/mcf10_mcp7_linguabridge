@@ -8,10 +8,7 @@ import LanguageBtn from "./LanguageBtn";
 import TestimonialSection from "./TestimonialSection";
 
 const LanguageSection = () => {
-  const [activeIndex, setActiveIndex] = useState(0);
-  const languages = ["Korean", "Japanese", "Thailand", "Spanish", "English"];
   const [selectedLanguage, setSelectedLanguage] = useState("Korean");
-
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
   const [transitioning, setTransitioning] = useState(false); // For animation control
@@ -25,7 +22,7 @@ const LanguageSection = () => {
     }, 3000);
 
     return () => clearInterval(interval);
-  }, [isPaused, currentIndex]);
+  }, [isPaused]); // only depend on pause state
 
   const handleNext = () => {
     setIsPaused(true);
@@ -51,13 +48,15 @@ const LanguageSection = () => {
 
   return (
     <section className="mt-36 mb-10">
+      {/* Header */}
       <div className="text-center">
-        <h1 className="text-3xl font-bold">Learner's Favourites</h1>
+        <h1 className="text-3xl font-bold">Learner&apos;s Favourites</h1>
         <p className="text-neutral-500 mt-10">
-          Choose from hundreds of courses from specialist organizstions
+          Choose from hundreds of courses from specialist organizations
         </p>
       </div>
 
+      {/* Language selection bar */}
       <div className="w-full bg-cyan-100 border py-3 sm:py-0 sm:h-[180px] md:h-[75px] lg:h-[85px] mt-10 rounded-lg mx-auto flex justify-center items-center">
         <ul className="sm:w-[60%] sm:h-full sm:flex sm:gap-2 sm:flex-wrap sm:items-center sm:justify-center md:w-full">
           {Object.keys(coursesData).map((language) => (
@@ -72,35 +71,38 @@ const LanguageSection = () => {
         </ul>
       </div>
 
+      {/* Courses grid */}
       <div className="mt-10 grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
         {coursesData[selectedLanguage]?.map((course, index) => (
           <CourseCardSection course={course} key={index} />
         ))}
       </div>
 
-      <div className="flex gap-5 mt-10 items-center">
+      {/* Testimonials */}
+      <div className="flex gap-5 mt-10 items-center justify-center">
         <button
           onClick={handlePrevious}
-          className="bg-gray-200 border border-neutral-400 text-white md:size-12 lg:size-14 rounded-full sm:hidden md:block"
-          className="bg-gray-200 border border-neutral-400 text-white size-14 rounded-full  "
+          className="bg-gray-200 border border-neutral-400 text-white size-14 rounded-full sm:hidden md:block"
         >
           <GrLinkPrevious size={20} className="mx-auto text-black" />
         </button>
+
         <TestimonialSection
           data={learnerData[currentIndex]}
           className={`transition-transform duration-500 ease-in-out transform ${
             transitioning ? "scale-95 opacity-50" : "scale-100 opacity-100"
           }`}
         />
+
         <button
           onClick={handleNext}
-          className="bg-gray-200  
-             text-white md:size-12 lg:size-14 rounded-full border border-neutral-400 sm:hidden md:block"
-             text-white size-14 rounded-full border border-neutral-400"
+          className="bg-gray-200 text-white size-14 rounded-full border border-neutral-400 sm:hidden md:block"
         >
           <GrLinkNext size={20} className="mx-auto text-black" />
         </button>
       </div>
+
+      {/* App download section */}
       <div className="flex flex-col mt-28 gap-8 relative">
         <h2 className="hidden xl:block lg:text-3xl xl:text-4xl font-bold">
           Your Language Learning Journey in Your Pocket!

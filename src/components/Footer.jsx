@@ -20,15 +20,17 @@ const Footer = () => {
 
   const currentParth = useLocation().pathname;
   const coursesDetail = currentParth.split("/")[2];
-  const isHomePage= currentParth === '/' ? true : false ;
-  console.log( " I am home page ", isHomePage)
+  const isHomePage = currentParth === "/" ? true : false;
+  console.log(" I am home page ", isHomePage);
   const isIputFooter =
-    currentParth === "/" ||
-    currentParth === "/apply-form" ||
-    currentParth === "/contact" ||
-    currentParth === `/courses/${coursesDetail}`
-      ? false
-      : true;
+    (
+      currentParth === "/" ||
+      currentParth === "/apply-form" ||
+      currentParth === "/contact" ||
+      currentParth === `/courses/${coursesDetail}`
+    ) ?
+      false
+    : true;
   console.log(isIputFooter);
   return (
     <footer className=" mt-auto">
@@ -112,9 +114,7 @@ const Footer = () => {
               </ul>
               <div className="grid grid-cols-5 max-sm:grid-cols-2 gap-8 sm:gap-6 col-span-2">
                 <div className="col-span-2">
-                  <h2 className="mb-6 text-lg font-semibold ">
-                    Get in Touch
-                  </h2>
+                  <h2 className="mb-6 text-lg font-semibold ">Get in Touch</h2>
                   <ul className=" flex flex-col gap-6 ">
                     <li className=" flex gap-2">
                       <img
@@ -149,9 +149,7 @@ const Footer = () => {
                   </ul>
                 </div>
                 <div className="col-span-1 max-sm:col-span-2">
-                  <h2 className="mb-6 font-semibold  text-lg">
-                    Pages
-                  </h2>
+                  <h2 className="mb-6 font-semibold  text-lg">Pages</h2>
                   <ul className="flex flex-col ">
                     <NavLink
                       onClick={handleScrollToTop}
@@ -187,9 +185,7 @@ const Footer = () => {
                   </ul>
                 </div>
                 <div className=" col-span-1 max-sm:col-span-2">
-                  <h2 className="mb-6 text-lg font-semibold ">
-                    Legal
-                  </h2>
+                  <h2 className="mb-6 text-lg font-semibold ">Legal</h2>
                   <ul className="flex flex-col">
                     <NavLink
                       onClick={handleScrollToTop}
@@ -218,7 +214,9 @@ const Footer = () => {
             </a>
             . All Rights Reserved.
           </span>
-            <span className="flex space-x-6 sm:justify-start sm:mt-0 text-[12px] ">MMSITConnection</span>
+          <span className="flex space-x-6 sm:justify-start sm:mt-0 text-[12px] ">
+            MMSITConnection
+          </span>
         </div>
       </div>
     </footer>
@@ -226,5 +224,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
-// className=" w-full "
